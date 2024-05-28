@@ -12,7 +12,7 @@ export default function HomeScreen() {
       headerImage={
         <Image
           source={require('@/assets/images/logo-paralax.png')}
-          style={styles.reactLogo}
+          style={styles.headerImage}
         />
       }>
       <ThemedView style={styles.tituloContainer}>
@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
     gap: 8,
     marginBottom: 8,
   },
-  reactLogo: {
+  headerImage: {
     height: 300,
-    width: 400,
-    bottom: 0,
-    left: 0,
+    width: 420,
+    bottom: -40,
+    left: -30,
     position: 'absolute',
   },
 });
