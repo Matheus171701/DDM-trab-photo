@@ -22,6 +22,34 @@ export default function TabTwoScreen() {
           <Image source={require('@/assets/images/1.png')} style={styles.icon} />
           <A style={styles.text}>Whatsapp</A>
         </ThemedView>
+
+        <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/2.png')} style={styles.icon} />
+          <A style={styles.text}>Github</A>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/3.png')} style={styles.icon} />
+          <A style={styles.text}>Pinterest</A>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/4.png')} style={styles.icon} />
+          <A style={styles.text}>Telefone</A>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/5.png')} style={styles.icon} />
+          <A style={styles.text}>Instagram</A>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/6.png')} style={styles.icon} />
+          <A style={styles.text}>Twiter</A>
+        </ThemedView>
+
+
+
       </ThemedView>
     </ParallaxScrollView>
   );
@@ -44,6 +72,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 16,
+    backgroundColor: 'white'
   },
   icon: {
     width: 40,
@@ -52,5 +81,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
+    color: 'white',
   },
 });
