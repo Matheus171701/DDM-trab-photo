@@ -20,32 +20,32 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.contentContainer}>
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/1.png')} style={styles.icon} />
-          <A style={styles.text}>Whatsapp</A>
+          <A style={styles.text} href='https://wa.me/qr/5D2XL6JUTF74P1'>Whatsapp</A>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/2.png')} style={styles.icon} />
-          <A style={styles.text}>Github</A>
+          <A style={styles.text} href='https://github.com/Matheus171701'>Github</A>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/3.png')} style={styles.icon} />
-          <A style={styles.text}>Pinterest</A>
+          <A style={styles.text} href='https://br.pinterest.com/mathrique17010/'>Pinterest</A>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/4.png')} style={styles.icon} />
-          <A style={styles.text}>Telefone</A>
+          <A style={styles.text} href='tel:5518981610390'>Telefone</A>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/5.png')} style={styles.icon} />
-          <A style={styles.text}>Instagram</A>
+          <A style={styles.text} href='https://www.instagram.com/eletronicsvolts/'>Instagram</A>
         </ThemedView>
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/6.png')} style={styles.icon} />
-          <A style={styles.text}>Twiter</A>
+          <A style={styles.text} href='https://x.com/MHenrique81152'>Twiter/X</A>
         </ThemedView>
 
 
@@ -72,7 +72,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 16,
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    borderRadius: 100,
+    padding: 10
   },
   icon: {
     width: 40,
@@ -81,6 +83,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: 'white',
+    
   },
 });
