@@ -56,7 +56,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+    fontFamily: 'Cinzel_Regular'
   },
+
   textoContainer: {
     gap: 8,
     marginBottom: 8,
