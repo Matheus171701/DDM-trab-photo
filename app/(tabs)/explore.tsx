@@ -24,6 +24,16 @@ export default function TabTwoScreen() {
         </ThemedView>
 
         <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/7.png')} style={styles.icon} />
+          <A style={styles.text} href='https://www.linkedin.com/in/matheus-henrique-688316312/'>Linkedin</A>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
+          <Image source={require('@/assets/images/8.png')} style={styles.icon} />
+          <A style={styles.text} href='mailto:mathrique17010@gmail.com'>Email</A>
+        </ThemedView>
+
+        <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/2.png')} style={styles.icon} />
           <A style={styles.text} href='https://github.com/Matheus171701'>Github</A>
         </ThemedView>
