@@ -37,7 +37,8 @@ const styles = StyleSheet.create({
   default: {
     fontSize: 16,
     lineHeight: 24,
-  },
+    fontFamily: 'Cinzel_Regular',
+    },
   defaultSemiBold: {
     fontSize: 16,
     lineHeight: 24,
@@ -47,10 +48,12 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     lineHeight: 32,
+    fontFamily: 'Cinzel_Regular',
   },
   subtitle: {
     fontSize: 20,
     fontWeight: 'bold',
+    fontFamily: 'Cinzel_Regular',
   },
   link: {
     lineHeight: 30,
