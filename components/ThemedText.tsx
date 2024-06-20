@@ -38,11 +38,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     fontFamily: 'Cinzel_Regular',
-    },
+  },
   defaultSemiBold: {
     fontSize: 16,
     lineHeight: 24,
     fontWeight: '600',
+    fontFamily: 'Cinzel_Regular',
   },
   title: {
     fontSize: 32,
@@ -59,5 +60,6 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     fontSize: 16,
     color: '#0a7ea4',
+    fontFamily: 'Cinzel_Regular',
   },
 });

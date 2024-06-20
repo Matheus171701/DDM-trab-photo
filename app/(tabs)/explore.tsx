@@ -1,5 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, View } from 'react-native';
+import { StyleSheet, Image, View, Pressable, Linking } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -16,50 +16,46 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Redes sociais</ThemedText>
       </ThemedView>
-
       <ThemedView style={styles.contentContainer}>
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('https://wa.me/qr/5D2XL6JUTF74P1')}>
           <Image source={require('@/assets/images/1.png')} style={styles.icon} />
-          <A style={styles.text} href='https://wa.me/qr/5D2XL6JUTF74P1'>Whatsapp</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Whatsapp</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('https://www.linkedin.com/in/matheus-henrique-688316312/')}>
           <Image source={require('@/assets/images/7.png')} style={styles.icon} />
-          <A style={styles.text} href='https://www.linkedin.com/in/matheus-henrique-688316312/'>Linkedin</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Linkedin</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('mailto:mathrique17010@gmail.com')}>
           <Image source={require('@/assets/images/8.png')} style={styles.icon} />
-          <A style={styles.text} href='mailto:mathrique17010@gmail.com'>Email</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Email</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('https://github.com/Matheus171701')}>
           <Image source={require('@/assets/images/2.png')} style={styles.icon} />
-          <A style={styles.text} href='https://github.com/Matheus171701'>Github</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Github</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('https://br.pinterest.com/mathrique17010/')}>
           <Image source={require('@/assets/images/3.png')} style={styles.icon} />
-          <A style={styles.text} href='https://br.pinterest.com/mathrique17010/'>Pinterest</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Pinterest</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('tel:5518981610390')}>
           <Image source={require('@/assets/images/4.png')} style={styles.icon} />
-          <A style={styles.text} href='tel:5518981610390'>Telefone</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Telefone</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('https://www.instagram.com/eletronicsvolts/')}>
           <Image source={require('@/assets/images/5.png')} style={styles.icon} />
-          <A style={styles.text} href='https://www.instagram.com/eletronicsvolts/'>Instagram</A>
-        </ThemedView>
+          <ThemedText style={styles.text}>Instagram</ThemedText>
+        </Pressable>
 
-        <ThemedView style={styles.redes}>
+        <Pressable style={styles.redes} onPress={() => Linking.openURL('https://x.com/MHenrique81152')}>
           <Image source={require('@/assets/images/6.png')} style={styles.icon} />
-          <A style={styles.text} href='https://x.com/MHenrique81152'>Twiter/X</A>
-        </ThemedView>
-
-
-
+          <ThemedText style={styles.text}>Twitter/X</ThemedText>
+        </Pressable>
       </ThemedView>
     </ParallaxScrollView>
   );
@@ -83,8 +79,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 16,
     backgroundColor: 'white',
-    borderRadius: 100,
-    padding: 10
+    borderRadius: 50,
+    padding: 10,
+    borderBlockColor: 'white',
+    width: 250, 
   },
   icon: {
     width: 40,
@@ -93,6 +91,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
+    color: "black"
     
   },
 });
